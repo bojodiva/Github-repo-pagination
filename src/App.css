@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amaranth&family=Montserrat&family=Qwitcher+Grypen:wght@700&family=Satisfy&family=Tiro+Kannada:ital@1&display=swap');
+
+/* main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-color: pink;
+}
+
+ /*root styling for both light and dark mode */
+/* :root {
+    --custom-color: #000000;
+    --padding: 20px;
+    --medium-font-size: 1.5em;
+    --big-font-size: 2.5em;
+    --input-padding: 30px 40px;
+    --margin-bottom: 15px;
+    --margin-top: 6px;
+    --border: 1px solid black;
+    --misc-color: black;
+    --background-color: white;
+    --hover-color:rgb(66, 62, 62);
+}
+
+.dark{
+    --custom-color: rgb(255, 253, 253);
+    --padding: 20px;
+    --medium-font-size: 1.5em;
+    --big-font-size: 2.5em;
+    --input-padding: 30px 40px;
+    --margin-bottom: 15px;
+    --margin-top: 6px;
+    --border: 1px solid white;
+    --misc-color: #0096ff;
+    --background-color: #21222A;
+    --hover-color: #213321;
+}*/
+
+
+/* my logo style */ 
+.name-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    width: 20px; 
+    margin: 15px;
+}
+
+
+.button {
+    border-radius: 10px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+    margin-left: 1px;
+  padding: 3px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#a {
+    background-color: red;
+    color: black;
+}
+
+#b {
+    background-color: orange;
+    color: black;
+}
+
+#i {
+    background-color: yellow;
+    color: black;
+}
+
+#s {
+    background-color: green;
+    color: black;
+}
+
+#o {
+    background-color: blue;
+    color: black;
+}
+
+#l {
+    background-color: indigo;
+    color: black;
+}
+
+#a2 {
+    background-color: violet;
+    color: black;
+}
+
+/*toggle slide styling*/
+.toggler {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    font-family: 'Satisfy', cursive;
+}
+
+.toggler p {
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(253, 251, 251);
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+
+
+
+/* nav bar styling */
+.nav--bar{
+  background-color: var(--background-color);
+  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+/*   flex-direction:  column; */
+  justify-content:space-between;
+/*   min-height: 100vh; */
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 100%;
+  height: 10vh;
+  background-color: pink
+}
+
+.nav--link{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+ /*.nav--link-button{
+  padding: 10px;
+  background-color: #d6a9bf;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+}*/
+
+/*.nav--link-button:hover{
+  background-color: #3d3da4;
+  padding:7px;
+}*/
+
+.nav{
+  text-decoration: none;
+  color: white;
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+   padding: 10px;
+  background-color: pink;
+  border-radius: 5px;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nav:hover{
+  background-color: #ca7785
+}
+
+/* home page styling */
+.home--pic{
+  width: 100px;
+  border-radius: 500px;
+/*   vertical-align: center; */
+  justify-content: center;
+}
+
+.home--intro{
+ text-align: center;
+  margin-top: 150px;
+ vertical-align: center;
+ background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fgradient%2F&psig=AOvVaw2DbFQd2brYHgdYIz9XFbTN&ust=1667170683110000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJiZoIevh_sCFQAAAAAdAAAAABAE");
+}
+
+.home--name{
+  font-size: 38px;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-weight: 100;
+  color: var(--misc-color);
+}
+
+.home--note{
+  font-family: 'Tiro Kannada', serif; 
+  color: var(--misc-color);
+}
+
+/* errorpage styling*/
+.note{
+  color: blue;
+  text-align: center;
+  vertical-align:center;
+  justify-content: center;
+  margin: 100px;
+}
+.notes{
+   color: blue;
+  text-align: center;
+  vertical-align:center;
+  justify-content: center;
+}
