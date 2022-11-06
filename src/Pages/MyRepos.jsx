@@ -64,7 +64,7 @@ class MyRepos extends Component {
             <br></br>
             
              <p className='visibility'>{repo.visibility}</p>
-             <hr className="hr"></hr>
+           
              <br></br>
             </div>
       ))};

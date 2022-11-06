@@ -48,7 +48,7 @@ function Home(){
     </div>
 
     <h1 className="repo--heading">My Repos</h1>
-    <hr></hr>
+    <br></br>
   <MyRepos/>
   </main>
  )}  

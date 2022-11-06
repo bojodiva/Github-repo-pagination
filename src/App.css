@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Amaranth&family=Montserrat&family=Qwitcher+Grypen:wght@700&family=Satisfy&family=Tiro+Kannada:ital@1&display=swap');
 
-/* main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
-}*/
 
 *{
   margin: 0;
@@ -32,34 +27,6 @@ body::-webkit-scrollbar {
   }
 
 
- /*root styling for both light and dark mode */
-/* :root {
-    --custom-color: #000000;
-    --padding: 20px;
-    --medium-font-size: 1.5em;
-    --big-font-size: 2.5em;
-    --input-padding: 30px 40px;
-    --margin-bottom: 15px;
-    --margin-top: 6px;
-    --border: 1px solid black;
-    --misc-color: black;
-    --background-color: white;
-    --hover-color:rgb(66, 62, 62);
-}
-
-.dark{
-    --custom-color: rgb(255, 253, 253);
-    --padding: 20px;
-    --medium-font-size: 1.5em;
-    --big-font-size: 2.5em;
-    --input-padding: 30px 40px;
-    --margin-bottom: 15px;
-    --margin-top: 6px;
-    --border: 1px solid white;
-    --misc-color: #0096ff;
-    --background-color: #21222A;
-    --hover-color: #213321;
-}*/
 
 
 /* my logo style */ 
@@ -127,9 +94,7 @@ body::-webkit-scrollbar {
   
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   display: flex;
-/*   flex-direction:  column; */
   justify-content:space-between;
-/*   min-height: 100vh; */
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 100%;
@@ -214,6 +179,9 @@ body::-webkit-scrollbar {
 .container{
   margin: 50px;
    font-family: 'Montserrat', sans-serif;
+  border: 1px solid #9e5763;
+  border-radius: 10px;
+  
 }
 
 .image{
@@ -253,13 +221,14 @@ span{
   text-decoration: none;
   color: black;
   font-weight: bolder;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  margin: 10px;
 }
 
 .constant{
   font-size: 22px;
   text-decoration: none;
-  color:black;
+  color:#3c3434;
    margin: 15px;
   text-decoration: underline;
 }
@@ -276,17 +245,16 @@ span{
 
 .description{
   margin-bottom: 5px;
+  margin:10px;
 }
 
 .time{
-  margin: 3px;
+  margin: 10px;
 }
 
 .visibility{
   font-weight: bold;
+  margin: 10px;
   
 }
 
-.hr{
-  background-color: #998084;
-}
