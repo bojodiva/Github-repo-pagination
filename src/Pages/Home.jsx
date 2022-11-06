@@ -85,6 +85,10 @@ function ErrorPage() {
           <span className="button" id="l">L</span>
           <span className="button" id="a2">A</span>
         </div>
+
+      <div>
+       <p className="constant"> AltSchool</p> 
+      </div>
       </div>
 
    
