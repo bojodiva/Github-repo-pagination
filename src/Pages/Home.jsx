@@ -1,12 +1,15 @@
 import React from "react";
 import {Routes, Route, NavLink} from "react-router-dom";
+// import MyRepos from "./MyRepos"
 import MyRepos from "./MyRepos"
 
-export default function Home(props){
 
-function Home(props){
+export default function Home(){
+
+
+function Home(){
   return(
-  <main className= {props.darkmode ? "dark" : ""} >
+  <main>
   <div className = 'nav--link' >
 
     <NavLink  style= {({isActive}) => isActive ? {color:'blue'} : {color: 'black'}}to="/" className="nav">Home</NavLink>
@@ -31,9 +34,9 @@ function Home(props){
 }
 
 
- function Repositories(props){
+ function Repositories(){
    return(
-  <main className= {props.darkmode ? "dark" : ""} >
+  <main>
   <div className = 'nav--link' >
 
     <NavLink  style= {({isActive}) => isActive ? {color:'black'} : {color: 'blue'}}to="/" className="nav">Home</NavLink>
@@ -43,8 +46,10 @@ function Home(props){
     <NavLink style= {({isActive}) => isActive ? {color:'black'} : {color: 'blue'}} to="repos" className= "nav"> Repositories </NavLink>
 
     </div>
- 
-    <MyRepos/>
+
+    <h1 className="repo--heading">My Repos</h1>
+    <hr></hr>
+  <MyRepos/>
   </main>
  )}  
 
@@ -67,6 +72,7 @@ function ErrorPage() {
 }
   
   
+  
   return(
   <main>
     <div className="nav--bar">
@@ -80,8 +86,9 @@ function ErrorPage() {
           <span className="button" id="a2">A</span>
         </div>
       </div>
-     
-  
+
+   
+    
      <nav>
           <Routes >
            <Route path="/" element={<Home />} />

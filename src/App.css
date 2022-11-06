@@ -16,6 +16,22 @@ body{
   background-color: pink;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+    border-radius: 5px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    
+    background-color: rgb(230, 163, 195);
+    outline: 1px solid #efafd4;
+  }
+
+
  /*root styling for both light and dark mode */
 /* :root {
     --custom-color: #000000;
@@ -102,69 +118,6 @@ body{
     color: black;
 }
 
-/*toggle slide styling*/
-.toggler {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    font-family: 'Satisfy', cursive;
-}
-
-.toggler p {
-    font-size: 1.0rem;
-    font-weight: 600;
-}
-
-.toggler--slider {
-    width: 25px;
-    height: 13px;
-    background-color: #2B283A;
-    border-radius: 2rem;
-    margin-inline: 7px;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid black;
-    box-sizing: content-box;
-}
-
-nav.dark .toggler--slider {
-    border-color: white;
-    background-color: #F5F5F5;
-}
-
-.toggler--slider--circle {
-    height: 13px;
-    width: 13px;
-    background-color: rgb(253, 251, 251);
-    border-radius: 50%;
-}
-
-nav.dark .toggler--slider--circle {
-    background-color: black;
-}
-
-.toggler--light {
-    color: #2B283A;
-}
-
-nav.dark .toggler--light {
-    color: #918E9B;
-}
-
-.toggler--dark {
-    color: #D5D4D8;
-}
-
-nav.dark .toggler-dark {
-    color: #FFFFFF;
-}
-
-nav.dark .toggler--slider {
-    justify-content: flex-end;
-}
-
 
 
 
@@ -191,17 +144,8 @@ nav.dark .toggler--slider {
 
 }
 
- /*.nav--link-button{
-  padding: 10px;
-  background-color: #d6a9bf;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}*/
 
-/*.nav--link-button:hover{
-  background-color: #3d3da4;
-  padding:7px;
-}*/
+
 
 .nav{
   text-decoration: none;
@@ -236,12 +180,10 @@ nav.dark .toggler--slider {
   font-size: 38px;
   font-family: 'Qwitcher Grypen', cursive;
   font-weight: 100;
-  color: var(--misc-color);
 }
 
 .home--note{
-  font-family: 'Tiro Kannada', serif; 
-  color: var(--misc-color);
+ 
 }
 
 /* errorpage styling*/
@@ -257,4 +199,86 @@ nav.dark .toggler--slider {
   text-align: center;
   vertical-align:center;
   justify-content: center;
+}
+
+
+/* repositories styling */
+.repo--heading{
+  font-family: 'Tiro Kannada', serif; 
+  text-align: center;
+ vertical-align: center;
+  margin: 10px;
+  font-size: 30px
+}
+
+.container{
+  margin: 50px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.image{
+  border-radius: 50px;
+}
+
+
+.number{
+  padding: 15px;
+   text-align:center;
+  color: white;
+  font-size: 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+ 
+  background-color: #bf6977;
+/*   border-radius: 10px; */
+  margin: 55px;
+}
+.number:hover {
+  padding: 5px;
+  background-color:#924956;
+}
+
+span{
+  padding:20px;
+}
+
+  .num{
+    justify-content: center;
+    line-height: 20vh;
+    vertical-align: center;
+  }
+
+.url{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 5px
+}
+
+.constant{
+  font-size: 25px;
+  text-decoration: none;
+  color:black;
+}
+
+.repo--link{
+  text-decoration: none;
+}
+
+.description{
+  margin-bottom: 5px;
+}
+
+.time{
+  margin: 3px;
+}
+
+.visibility{
+  font-weight: bold;
+  
+}
+
+.hr{
+  background-color: #998084;
 }
