@@ -8,12 +8,12 @@
 
 
 body{
-  background-color: pink;
+  background-image: linear-gradient(to left, #c8acb1, #20656a);
 }
 
 body::-webkit-scrollbar {
     width: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
   }
    
   body::-webkit-scrollbar-track {
@@ -21,9 +21,9 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-thumb {
-    
-    background-color: rgb(230, 163, 195);
-    outline: 1px solid #efafd4;
+     background-image: linear-gradient(to top, #38898f,  #c9abb2);
+/*     background-color: #62a2a7; */
+    outline: 1px solid  #c8acb;
   }
 
 
@@ -50,17 +50,17 @@ body::-webkit-scrollbar {
  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-#a {
+#o {
     background-color: red;
     color: black;
 }
 
-#b {
+#a2 {
     background-color: orange;
     color: black;
 }
 
-#i {
+#l {
     background-color: yellow;
     color: black;
 }
@@ -70,17 +70,17 @@ body::-webkit-scrollbar {
     color: black;
 }
 
-#o {
+#a {
     background-color: blue;
     color: black;
 }
 
-#l {
+#i {
     background-color: indigo;
     color: black;
 }
 
-#a2 {
+#b {
     background-color: violet;
     color: black;
 }
@@ -98,8 +98,8 @@ body::-webkit-scrollbar {
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 100%;
-  height: 10vh;
-  background-color: pink
+  height: 50px;
+  background-image: linear-gradient( to right, #181853);
 }
 
 .nav--link{
@@ -118,12 +118,13 @@ body::-webkit-scrollbar {
   font-size:16px;
   font-family: 'Montserrat', sans-serif;
    padding: 10px;
-  background-color: pink;
+background-image: linear-gradient(to left, #20656a,  #d7c1c5);
   border-radius: 5px;
  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .nav:hover{
-  background-color: #ca7785
+  background-color: #ca7785;
+  background-image: linear-gradient(to left, #38898f,  #e7d9dc)
 }
 
 /* home page styling */
@@ -148,8 +149,30 @@ body::-webkit-scrollbar {
 }
 
 .home--note{
- 
+ font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+  font-weight: 40;
 }
+
+.logo--links{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-decoration: none;
+}
+
+.logo--link{
+  width: 35px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+.logo--link:hover{
+  padding: 9px;
+  background-color:#38898f;
+}
+
+
 
 /* errorpage styling*/
 .note{
@@ -165,7 +188,14 @@ body::-webkit-scrollbar {
   vertical-align:center;
   justify-content: center;
 }
-
+.error{
+  color: #004545;
+text-align: center;
+  vertical-align:center;
+  justify-content:center;
+  margin:100px;
+  font-size: 25px;
+  }
 
 /* repositories styling */
 .repo--heading{
@@ -173,15 +203,16 @@ body::-webkit-scrollbar {
   text-align: center;
  vertical-align: center;
   margin: 10px;
-  font-size: 30px
+  font-size: 30px;
+  color: #333;
 }
 
 .container{
   margin: 50px;
    font-family: 'Montserrat', sans-serif;
-  border: 1px solid #9e5763;
+  border: 2px solid  #20656a;
   border-radius: 10px;
-  
+  padding: 30px;
 }
 
 .image{
@@ -189,21 +220,29 @@ body::-webkit-scrollbar {
 }
 
 
+  .page--link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
 .number{
-  padding: 15px;
-   text-align:center;
+  padding: 10px;
+   text-align: center;
+  width: 3%;
   color: white;
-  font-size: 10px;
+  font-size: 8px;
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
- 
-  background-color: #bf6977;
+
+  background-color: #20656a;
   border-radius: 10px;
-  margin: 55px;
+  margin: 1px;
 }
 .number:hover {
-  padding: 5px;
-  background-color:#924956;
+  padding: 9px;
+  background-color:#c8acb1;
 }
 
 span{
@@ -223,6 +262,7 @@ span{
   font-weight: bolder;
   margin-bottom: 5px;
   margin: 10px;
+  overflow: wrap;
 }
 
 .constant{
@@ -258,3 +298,32 @@ span{
   
 }
 
+ .loader-body {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #a1ced1;
+        display: grid;
+        place-items: center;
+      }
+
+      .loader {
+        border: 5px solid #3c2a2a;
+        border-top: 5px solid #136478;
+        border-radius: 40%;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+        transform: rotate(360deg);
+        }
+  }

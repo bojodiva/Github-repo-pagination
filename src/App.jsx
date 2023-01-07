@@ -1,29 +1,19 @@
-import './App.css'
-import React from  "react"
-// import {Routes, Route, NavLink} from "react-router-dom";
-import Home from "./Pages/Home"
-import ErrorBoundary from "./components/ErrorBoundary"
+import './App.css';
+import React from  "react";
+import GeneralPage from "./components/GeneralPage";
+import ErrorBoundary from "./components/ErrorBoundary";
+import {HelmetProvider} from "react-helmet-async";
 
 
 export default function App() {
-  const [darkMode, setDarkMode] = React.useState(true)
-
-    function toggleDarkMode() {
-        setDarkMode(prevMode => !prevMode)
-    }
-
-
-  
+ const helmetContext ={};
   return (
     <main>
       <ErrorBoundary>
-     <Home
-       darkMode = {darkMode} 
-    toggleDarkMode ={toggleDarkMode} 
-       />
+       <HelmetProvider context={helmetContext}>
+     <GeneralPage />
+         </HelmetProvider>
       </ErrorBoundary>
-
-      
     </main>
   )
 }

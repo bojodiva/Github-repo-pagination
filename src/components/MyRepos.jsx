@@ -27,8 +27,21 @@ class MyRepos extends Component {
   })
   }
 
+//functions handling page increment anf decrement
+handleIncrement= () =>{
+   this.setState({
+currentPage:  this.state.currentPage + 1 });
+}
+
+handleDecrement = () =>{
+  this.setState({
+    currentPage: this.state.currentPage - 1 }) ;
+  }
+
+  
 
   render(){
+
   var{loading} = this.state
 
     const indexOfLastPost = this.state.currentPage * this.state.postsPerPage;
@@ -38,7 +51,8 @@ class MyRepos extends Component {
 
     const pageNos = [];
 
-      for ( let i = 1; i <= Math.ceil(this.state.repos.length/ this.state.postsPerPage); i++) {
+    let totalPosts = this.state.repos.length
+      for ( let i = 1; i <= Math.ceil(totalPosts/ this.state.postsPerPage); i++) {
          pageNos.push(i) ;                          
       }
 
@@ -49,7 +63,9 @@ class MyRepos extends Component {
 
     if(!loading){
       return(
-<div>Loading...</div>
+ <div className="loader-body">
+        <div className="loader"></div>
+      </div>
       )
     }
     else{
@@ -68,14 +84,19 @@ class MyRepos extends Component {
              <br></br>
             </div>
       ))};
+
+          
           <div className= "page--link">
-     <span className="number" onClick={() => {setPage(currentPage - 1)}}>Prev</span>
-           { 
-              pageNos.map((pageNo, index) => (  <span   key={index} className="number" onClick={() => {setPage(pageNo)}}>
+      <div  className="number" onClick={this.handleDecrement}>Prev</div>
+            
+           {pageNos.map((pageNo, index) => (  <div   key={index} className="number" onClick={() => {setPage(pageNo)}}>
                 {pageNo}
-       </span>    
+       </div>    
           ))}
-            <span className="number" onClick={() => {setPage(currentPage + 1)}}>Next</span>
+
+            
+     <div  className="number" onClick={this.handleIncrement}> Next</div>
+                                      
          
         </div>
 
