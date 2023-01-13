@@ -29,13 +29,18 @@ class MyRepos extends Component {
 
 //functions handling page increment anf decrement
 handleIncrement= () =>{
+if((this.state.currentPage * this.state.postsPerPage) < this.state.repos.length){
    this.setState({
 currentPage:  this.state.currentPage + 1 });
+  }
 }
 
 handleDecrement = () =>{
+  if(this.state.currentPage > 1){
   this.setState({
     currentPage: this.state.currentPage - 1 }) ;
+}
+
   }
 
   
@@ -85,7 +90,7 @@ handleDecrement = () =>{
             </div>
       ))};
 
-          
+      
           <div className= "page--link">
       <div  className="number" onClick={this.handleDecrement}>Prev</div>
             
