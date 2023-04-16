@@ -44,3 +44,6 @@ console.log(0.1 + 0.2)
 console.log((0.1 + 0.2).toFixed(1) === 0.3.toFixed(1));
 
 // console.log(0.1 + 0.2 === 0.3);
+
+// Tried the Math.round method
+console.log((Math.round((0.1 + 0.2) * 10) / 10 ) === (Math.round(0.3 * 10) / 10))
